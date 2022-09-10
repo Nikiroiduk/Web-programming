@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    height: 50px;
+    width: 500px;
+    position: relative;
+}
+
+.flag,
+.coatOfArms,
+.navigation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.coatOfArms{
+    top: 30px;
+    left: 430px;
+}
+
+.navigation{
+    top: 430px;
+    left: 325px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006bb4;
+    box-shadow: 0px 0px 10px 3px #0000005d;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #004370;
+}
+
+header {
+    margin-bottom: 450px;
+}
+
+.active {
+    background-color: #ffdc7d;
+    color: black
+}
+
+.active:hover {
+    background-color: #ffd664;
+}
+
+article {
+    padding: 20px;
+    font-size: 16pt;
+}
