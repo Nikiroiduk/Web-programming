@@ -10,8 +10,8 @@ body {
 }
 
 .wrapper{
-    height: 50px;
-    width: 500px;
+    height: 450px;
+    width: 900px;
     position: relative;
 }
 
@@ -19,17 +19,21 @@ body {
 .coatOfArms,
 .navigation{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.flag {
+    box-shadow: 0px 0px 10px 3px #0000005d;
 }
 
 .coatOfArms{
     top: 30px;
-    left: 430px;
+    left: 650px;
 }
 
 .navigation{
-    top: 430px;
+    top: 420px;
     left: 325px;
     display: flex;
     justify-content: center;
@@ -42,7 +46,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #006bb4;
-    box-shadow: 0px 0px 10px 3px #0000005d;
+    box-shadow: 0px 0px 10px 0px #0000005d;
+    border-radius: 6px;
 }
 
 li {
@@ -62,7 +67,9 @@ li a:hover {
 }
 
 header {
-    margin-bottom: 450px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .active {
@@ -77,4 +84,90 @@ header {
 article {
     padding: 20px;
     font-size: 16pt;
+    box-shadow: 0px 0px 10px 1px #0000005d;
+    border-radius: 10px;
+    width: 900px;
+}
+
+article h1 {
+    color: #09619c;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+article p {
+    letter-spacing: 1px;
+}
+
+.articleContainer {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+input {
+    display: inline-block;
+    margin: 10px auto;
+    border: 2px solid #eee;
+    padding: 10px 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.inputBtn {
+    background-color: #006bb4;
+    color: white;
+}
+
+.leftimg {
+    float:left;
+    margin: 10px 10px 10px 0px;
+}
+
+.rightimg  {
+    float: right;
+    margin: 10px 0px 10px 10px;
+}
+
+.inputBtn:hover {
+    background-color: #004370;
+}
+
+textarea {
+    display: inline-block;
+    margin: 10px auto;
+    border: 2px solid #eee;
+    padding: 10px 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.date {
+    width: 10%;
+}
+
+.action {
+    width: 20%;
+}
+
+.description {
+    width: 70%;
 }

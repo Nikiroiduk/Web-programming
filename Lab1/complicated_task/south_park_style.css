@@ -1,0 +1,53 @@
+#square {
+    width: 100px;
+	height: 100px;
+	background: red;
+}
+
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50px;
+}
+
+.eric #head #hat {
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 132px;
+	height: 78px;
+	background: #49c2b580;
+}
+
+.eric #head #hat:before {
+    content: " ";
+    border-radius: 65% 40%;
+    position: absolute;
+    top: 24px;
+    left: -3px;
+    width: 134px;
+    height: 48px;
+    background: #f0e50c80;
+}
+
+.eric #head #hat:after {
+    content: " ";
+    border-radius: 65% 40%;
+    position: absolute;
+    top: 29px;
+    left: -6px;
+    width: 137px;
+    height: 52px;
+    background: #f0d5ab80;
+}
+
+.eric #head #ellipse {
+	width: 150px;
+	height: 107px;
+	background: red;
+	border-radius: 75px / 50px;
+	position: absolute;
+	z-index: 0;
+}

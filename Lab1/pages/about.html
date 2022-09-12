@@ -5,42 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../form-processing.js"></script>
     <title>About</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div class="flag">
-                <img src="../source/images/svg/flag.svg" height="450" width="900" alt="flag" />
-            </div>
+                <img src="../source/images/svg/flag.svg" height="450" width="900" alt="flag" class="flag"/>
             <div class="coatOfArms">
-                <img src="../source/images/svg/coatOfArms.svg" height="350" width="700" alt="flag" />
+                <img src="../source/images/svg/coatOfArms.svg" height="350" width="250" alt="coatOfArms" />
             </div>
             <div class="navigation">
                 <nav>
                     <ul>
                         <li>
-                            <a href="./../index.html">Home</a>
+                            <a href="./../index.html">Главная</a>
                         </li>
                         <li>
-                            <a href="./history.html">History</a>
+                            <a href="./history.html">История</a>
                         </li>
                         <li>
-                            <a href="./infrastructure.html">Infrastructure</a>
+                            <a href="./infrastructure.html">Инфраструктура</a>
                         </li>
                         <li>
-                            <a href="./culture.html">Culture</a>
+                            <a href="./culture.html">Культура</a>
                         </li>
                         <li>
-                            <a class="active" href="./about.html">About</a>
+                            <a class="active" href="./about.html">Связь</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <h1>
-        About
-    </h1>
+    <div class="articleContainer">
+        <article>
+            <div>
+                <form  method="POST">
+                    <input name="name" type="text" placeholder="Ваше имя" required/>
+                    <br>
+                    <input name="email" type="text" placeholder="Ваша почта" required/>
+                    <br>
+                    <textarea cols="32" name="message" rows="5"> Текст сообщения </textarea>
+                    <br>
+                    <input class="inputBtn" type="submit" value="Отправить" />
+                    
+                  </form>
+            </div>
+        </article>
+    </div>
 </body>
 </html>

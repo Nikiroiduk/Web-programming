@@ -10,37 +10,82 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="flag">
-                <img src="../source/images/svg/flag.svg" height="450" width="900" alt="flag" />
-            </div>
+                <img src="../source/images/svg/flag.svg" height="450" width="900" alt="flag" class="flag"/>
             <div class="coatOfArms">
-                <img src="../source/images/svg/coatOfArms.svg" height="350" width="700" alt="flag" />
+                <img src="../source/images/svg/coatOfArms.svg" height="350" width="250" alt="coatOfArms" />
             </div>
             <div class="navigation">
                 <nav>
                     <ul>
                         <li>
-                            <a href="./../index.html">Home</a>
+                            <a href="./../index.html">Главная</a>
                         </li>
                         <li>
-                            <a href="./history.html">History</a>
+                            <a href="./history.html">История</a>
                         </li>
                         <li>
-                            <a class="active" href="./infrastructure.html">Infrastructure</a>
+                            <a class="active" href="./infrastructure.html">Инфраструктура</a>
                         </li>
                         <li>
-                            <a href="./culture.html">Culture</a>
+                            <a href="./culture.html">Культура</a>
                         </li>
                         <li>
-                            <a href="./about.html">About</a>
+                            <a href="./about.html">Связь</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <h1>
-        Infrastructure
-    </h1>
+    <div class="articleContainer">
+        <article>
+            <div class="grid">
+                <div>
+                    <img src="../source/images/map_small.jpg" height="200" width="250" style="border-radius: 6px;"/>
+                </div>
+                <div>
+                    <h1>
+                        География города
+                    </h1>
+                    <p>
+                        Город расположен в юго-восточной части Донецкой Народной Республики.
+                        С севера граничит с Антрацитовским районом Луганской Народной
+                        Республики, на западе с городом Торез (ДНР), а на юго-востоке
+                        с Шахтерским районом (ДНР) который, в свою очередь, непосредственно
+                        граничит с Российской Федерацией. Расстояние до ближайшего
+                        международного аэропорта (г. Донецк) - 80 км, до ближайшего
+                        морского порта - 190 км (г. Мариуполь). Площадь 189,0 кв. км.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="articleContainer">
+        <article>
+            <div>
+                <div>
+                    <h1>
+                        Карта города
+                    </h1>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71804.55623826665!2d38.69495747440197!3d48.02428104918967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e0527fe326ac47%3A0xa186a4453c6414ce!2z0KHQvdC10LbQvdC-0LUsINCU0L7QvdC10YbQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA4NjUwMA!5e0!3m2!1sru!2sru!4v1662973323852!5m2!1sru!2sru" width="860" height="450" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="articleContainer">
+        <article>
+                <div>
+                    <h1>
+                        Общественный транспорт города
+                    </h1>
+                    <p>
+                        График движения общественного транспорта можно загрузить по
+                        <a href="../source/data/transport.pdf" download="">ссылке (.pdf)</a>
+                    </p>
+                </div>
+        </article>
+    </div>
 </body>
 </html>
