@@ -1,0 +1,12 @@
+#noFocus:hover{
+    outline: none;
+    box-shadow: none;
+}
+#noFocus:focus{
+    outline: none;
+    box-shadow: none;
+}
+#noFocus:active{
+    outline: none;
+    box-shadow: none;
+}
