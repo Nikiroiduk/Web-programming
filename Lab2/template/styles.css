@@ -10,3 +10,40 @@
     outline: none;
     box-shadow: none;
 }
+
+#noFocusSubsctibe{
+    border: none;
+}
+
+#featuredItem{
+    transition: box-shadow .3s ease-in-out;
+}
+
+img {
+    transition: opacity .3s ease-in-out;
+}
+
+#featuredItem figure{
+    background: #000;
+}
+
+#feturedItem figure img{
+    opacity: 1;
+}
+
+#featuredItem:hover{
+
+    box-shadow: 0 10px 11px -5px rgba(33,33,33,.2);
+}
+
+#featuredItem:hover figure img {
+    opacity: .5;
+}
+
+#hoverButton{
+    display: none;
+}
+
+#featuredItem:hover #hoverButton{
+    display: block;
+}
