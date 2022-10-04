@@ -14,7 +14,7 @@
 }
 
 
-button:not(.collapsed){
+nav li button:not(.collapsed) {
     color: #f16d7f;
 }
 
