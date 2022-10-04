@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/fonts/MyriadPro/style.css">
-    <link rel="stylesheet" href="resources/fonts/Awesome/fontawesome.css">
+    <link rel="stylesheet" href="../resources/fonts/MyriadPro/style.css">
+    <link rel="stylesheet" href="../resources/fonts/Awesome/fontawesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Lab 2</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row align-items-start mt-4 px-2 py-2">
                 <div class="col-2">
-                    <embed src="resources/images/logo.svg"/>
+                    <embed src="../resources/images/logo.svg"/>
                 </div>
                 <div class="col-5">
                     <div class="input-group flex-nowrap border rounded mt-1">
@@ -55,7 +55,7 @@
                 </div>
                 <div class="offset-md-3 col-2 d-flex">
                     <button type="button" id="noFocus" class="btn position-relative">
-                        <img src="resources/images/cart.svg"/>
+                        <img src="../resources/images/cart.svg"/>
                         <span class="position-absolute top-0 start-100 translate-start badge rounded-pill text-white" style="background-color: #f16d7f;">
                             2
                         </span>
@@ -68,7 +68,7 @@
                             <div class="container" style="width: 230px; font-family: 'Myriad Pro Regular';">
                                 <div class="row justify-content-between">
                                     <div class="column">
-                                        <img src="resources/images/cart/BeardMan.png"/>
+                                        <img src="../resources/images/cart/BeardMan.png"/>
                                     </div>
                                     <div class="column align-self-center">
                                         <div class="row text-uppercase my-1">Rebox zane</div>
@@ -91,7 +91,7 @@
                             <div class="container" style="width: 230px; font-family: 'Myriad Pro Regular';">
                                 <div class="row justify-content-between">
                                     <div class="column">
-                                        <img src="resources/images/cart/CartWoman.png"/>
+                                        <img src="../resources/images/cart/CartWoman.png"/>
                                     </div>
                                     <div class="column align-self-center">
                                         <div class="row text-uppercase my-1">Rebox zane</div>
@@ -119,11 +119,9 @@
                             </div>
                         </li>
                         <li style="font-family: 'Myriad Pro Regular';">
-                            <a href="pages/checkout.html">
-                                <button class="btn text-uppercase py-2 px-2 my-3 rounded-0 container-fluid" id="noFocus" style="font-size: 15pt; font-weight: semibold; background-color: white; border-color: #f16d7f; color: #f16d7f;">
-                                    checkout
-                                </button>
-                            </a>
+                            <button class="btn text-uppercase py-2 px-2 my-3 rounded-0 container-fluid" id="noFocus" style="font-size: 15pt; font-weight: semibold; background-color: white; border-color: #f16d7f; color: #f16d7f;">
+                                checkout
+                            </button>
                         </li>
                         <li style="font-family: 'Myriad Pro Regular'; ">
                             <button class="btn text-uppercase py-2 px-2 rounded-0 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: white; border-color: #eaeaea; color: #4a4a4a;">
@@ -136,10 +134,10 @@
             <div class="px-5 py-2">
                 <ul class="nav justify-content-center nav-fill mx-5 text-uppercase" style="font-family: 'Myriad Pro Regular'; font-weight: semibold;">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" id="active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-dark" id="active" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="pages/product.html">Man</a>
+                        <a class="nav-link text-dark" href="product.html">Man</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">Women</a>
@@ -161,201 +159,95 @@
         </div>
     </header>
     <main>
-        <div class="text-center">
-            <div class="position-relative">
-                <div class="position-absolute text-left" style="width: 50%; left: 18%; top: 38%;">
-                    <div class="text-uppercase pl-3" style="border-left: #f16d7f; border-width: 10px; border-left-style: solid; font-family: 'Myriad Pro Bold'; font-weight: bolder; letter-spacing: 4px; line-height: 290%;">
-                        <p style="font-size: 40pt;" class="my-0">The brand</p>
-                        <p style="font-size: 25pt;" class="my-0">of luxerious <b style="color: #f16d7f">fashion</b></p>
-                    </div>
-                </div>
-                <img src="resources/images/theBrand.png"/>
-            </div>
-        </div>
-        <div class="container d-flex justify-content-center mt-5 text-uppercase" style="font-family: 'Myriad Pro Bold'; font-weight: bolder; letter-spacing: 2px; line-height: 80%;">
-            <div class="row mt-5">
-                <div class="column mr-3">
-                    <div class="mb-3 position-relative">
-                        <div class="position-absolute pt-3 pl-3 pr-3 pb-2" style="background-color: white; top: 10%;">
-                            <p>hot deal</p>
-                            <p style="font-size: 20pt; color: #f16d7f">for men</p>
-                        </div>
-                        <img src="resources/images/latest/suitMan.png">
-                    </div>
-                    <div class="mb-3 position-relative">
-                        <div class="position-absolute pt-3 pl-3 pr-3 pb-2" style="background-color: white; top: 10%;">
-                            <p>luxerious & trandy</p>
-                            <p style="font-size: 20pt; color: #f16d7f">accesories</p>
-                        </div>
-                        <img src="resources/images/latest/accesories.png">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="mb-3 position-relative">
-                        <div class="position-absolute pt-3 pl-3 pr-3 pb-2" style="background-color: white; top: 10%;">
-                            <p>30% offer</p>
-                            <p style="font-size: 20pt; color: #f16d7f">women</p>
-                        </div>
-                        <img src="resources/images/latest/notSuitWoman.png">
-                    </div>
-                    <div class="mb-3 position-relative">
-                        <div class="position-absolute pt-3 pl-3 pr-3 pb-2" style="background-color: white; top: 10%;">
-                            <p>new arrivals</p>
-                            <p style="font-size: 20pt; color: #f16d7f">for kids</p>
-                        </div>
-                        <img src="resources/images/latest/kido.png">
-                    </div>
+        <div class="container-fluid" style="background-color: #f8f3f4;">
+            <div class="container">
+                <div class="text-uppercase row justify-content-between py-5">
+                        <p style="color:#f16d7f; font-size: 14pt; font-weight: 700; letter-spacing: 2px;">New arrivals</p>
+                        <p>Home/Men/<b style="color:#f16d7f;">New Arrivals</b></p>
                 </div>
             </div>
         </div>
-        <div class="container text-center mt-5">
-            <p style="font-family: 'Myriad Pro Bold'; font-size: 24pt; line-height: 70%;">Featured Items</p>
-            <p style="font-family: 'Myriad Pro Regular'; font-size: 14pt; opacity: .8;">
-                Shop for items based on what we featured in this week
-            </p>
-            <div class="text-uppercase text-left" style="font-family: 'Myriad Pro Regular'; font-weight: bold; font-size: 10pt; letter-spacing: 1px;">
-                <div class="row justify-content-center mb-3">
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured1.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
+        <div class="container my-5">
+            <div class="container">
+                <p class="text-uppercase" style="font-weight: 700;">01. Shipping adress</p>
+                <div class="row ml-2">
+                    <div class="col">
+                        <div class="text-uppercase" style="font-weight: 500;">
+                            Check as a guest or register
                         </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
+                        <div style="opacity: .7;">
+                            Register with us for future convenience
+                        </div>
+                        <div class="mt-4 form-check text-uppercase" style="font-weight: 500;">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Default radio
+                            </label>
+                        </div>
+                        <div class="mt-3 mb-4 form-check text-uppercase" style="font-weight: 500;">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Default checked radio
+                            </label>
+                        </div>
+                        <div class="text-uppercase" style="font-weight: 500;">
+                            Register and save time
+                        </div>
+                        <div style="opacity: .7;">
+                            Register with us for future convenience
+                        </div>
+                        <div class="mt-4" style="opacity: .7;">
+                            » Fast and easy checkout
+                        </div>
+                        <div style="opacity: .7;">
+                            » Easy access to your order history and status
+                        </div>
+                        <button class="btn text-uppercase py-3 px-4 mt-5 rounded-0" id="noFocus" style="font-size: 13pt; font-weight: 700; background-color: white; border-color: #c0c0c0; color: rgb(57, 57, 57);">
+                            checkout
                         </button>
                     </div>
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured2.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
+                    <div class="col">
+                        <div class="text-uppercase" style="font-weight: 500;">
+                            Already Registed?
                         </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
+                        <div style="opacity: .7;">
+                            Please log in below
+                        </div>
+                        <form class="mt-4 was-validated text-uppercase" style="font-weight: 600;">
+                                    <label for="validationTextarea" class="form-label">Email adress</label>
+                                <input class="form-control" id="validationTextarea" placeholder="" required></input>
+                        </form>
+                        <form class="mt-3 was-validated text-uppercase" style="font-weight: 600;">
+                            <label for="validationTextarea" class="form-label">Password</label>
+                        <input class="form-control" id="validationTextarea" placeholder="" required></input>
+                        </form>
+                    <div>
+                        <button class="btn text-uppercase py-3 px-4 mt-5 rounded-0" id="noFocus" style="font-size: 13pt; font-weight: 700; background-color: white; border-color: #c0c0c0; color: rgb(57, 57, 57);">
+                            Login
                         </button>
+                        <p>Forget password?</p>
                     </div>
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured3.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
-                        </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
-                        </button>
-                    </div>
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured4.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
-                        </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
-                        </button>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured5.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
-                        </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
-                        </button>
-                    </div>
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured6.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
-                        </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
-                        </button>
-                    </div>
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured7.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
-                        </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
-                        </button>
-                    </div>
-                    <div id="featuredItem" class="mx-2 position-relative">
-                        <figure class="m-0">
-                            <img src="resources/images/featured/featured8.png"/>
-                        </figure>
-                        <div class="p-4">
-                            <p>mango people t-shirt</p>
-                            <p style="color: #f16d7f;">$52.00</p>
-                        </div>
-                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
-                            <img src="resources/images/cartLight.svg"/> Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <button class="btn mt-4 mb-5 py-2 rounded-0" type="button" style="background-color: #f16d7f; color: #ffffff" id="noFocus" href="#" role="button">
-                Browse All Product <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <div class="mt-5 mb-5 row justify-content-center" style="font-family: Myriad Pro Regular';">
-                <div class="position-relative">
-                    <div class="position-absolute text-uppercase text-left" style="letter-spacing: 2px; line-height: 220%; color: #fff; top: 25%; left: 5%">
-                        <p style="font-size: 40pt;">30% <b style="color: #f16d7f;">offer</b></p>
-                        <p style="font-size: 25pt;">for women</p>
-                    </div>
-                    <img src="resources/images/30prOfferForWomen.png"/>
-                </div>
-                <div class="p-5 col" style="color: #fff; background: #222224; letter-spacing: 1px;">
-                    <div class="row mb-4">
-                        <div><img src="resources/images/freeDelivery.svg"/></div>
-                        <div class="col text-left p-0 pl-4">
-                            <h5>Free Delivery</h5>
-                            <p style="font-size: 10pt;">Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models</p>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div><img src="resources/images/salesUndDiscounts.svg"/></div>
-                        <div class="col text-left p-0 pl-4">
-                            <h5>Sales & discounts</h5>
-                            <p style="font-size: 10pt;">Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div><img src="resources/images/qualityAssurance.svg"/></div>
-                        <div class="col text-left p-0 pl-4">
-                            <h5>Quality assurance</h5>
-                            <p style="font-size: 10pt;">Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models</p>
-                        </div>
-                    </div>
-                </div>
+                <p class="mt-5 text-uppercase" style="font-weight: 700;">02. Billing information</p>
+                <hr class="dropdown-divider">
+                <p class="text-uppercase" style="font-weight: 700;">03. Shipping information</p>
+                <hr class="dropdown-divider">
+                <p class="text-uppercase" style="font-weight: 700;">04. Shipping method</p>
+                <hr class="dropdown-divider">
+                <p class="text-uppercase" style="font-weight: 700;">05. payment method</p>
+                <hr class="dropdown-divider">                
+                <p class="text-uppercase" style="font-weight: 700;">05. payment method</p>
+                <hr class="dropdown-divider">                
+                <p class="text-uppercase" style="font-weight: 700;">06. order view</p>
+                <hr class="dropdown-divider">  
             </div>
         </div>
         <div class="text-center py-5 mb-5">
             <div class="position-relative">
                 <div class="row position-absolute" style="width: 35%; left: 15%; top: 20%;">
                     <div>
-                        <img src="resources/images/BinBurhan.png"/>
+                        <img src="../resources/images/BinBurhan.png"/>
                     </div>
                     <div class="col text-left">
                         <p style="font-style: italic;">"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"</p>
@@ -375,14 +267,14 @@
                         </div>
                     </div>
                 </div>
-                <img src="resources/images/subscribe.png"/>
+                <img src="../resources/images/subscribe.png"/>
             </div>
         </div>
         <div class="container text-center my-5">
             <div class="row">
                 <div class="col-sm-5">
                     <div class="col text-left">
-                        <img src="resources/images/logo.svg"/>
+                        <img src="../resources/images/logo.svg"/>
                         <div class="ml-1 mt-4" style="opacity: .8;">
                             <p style="font-size: 11pt;">Objectively transition rxtensive data rather than functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Instrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
                             <p style="font-size: 11pt;">Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamicaly optimize.</p>

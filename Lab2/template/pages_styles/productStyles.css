@@ -1,0 +1,24 @@
+#menuButton{
+    border: none;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #f16d7f;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(227, 227, 227);
+    box-shadow: none;
+}
+
+#menuButton:hover{
+    box-shadow: none;
+}
+
+
+button:not(.collapsed){
+    color: #f16d7f;
+}
+
+a.d-inline-flex.align-items-center.rounded{
+    text-decoration: none;
+    color: #6f6e6e;
+}
