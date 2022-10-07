@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/fonts/MyriadPro/style.css">
+    <link rel="stylesheet" href="../resources/fonts/Awesome/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../pages_styles/productStyles.css">
+    <title>Lab 2</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-start mt-4 px-2 py-2">
+                <div class="col-2">
+                    <embed src="../resources/images/logo.svg"/>
+                </div>
+                <div class="col-5">
+                    <div class="input-group flex-nowrap border rounded mt-1">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle border-right rounded-0" style="background-image: linear-gradient(to top, #f0f0f0 0%, #f5f5f5 55%, #f2f2f2 100%);" id="noFocus" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Browse
+                            </button>
+                            <ul class="dropdown-menu" style="font-family: 'Myriad Pro Regular'; ">
+                                <li><p class="px-3 pt-3 my-0 text-uppercase" style="font-weight: semibold;">Plates</p></li>
+                                <li><hr class="dropdown-divider mx-2"></li>  
+                                <li><a class="dropdown-item my-0" href="#">Dresses</a></li>
+                                <li><a class="dropdown-item my-0" href="#">Tops</a></li>
+                                <li><a class="dropdown-item" href="#">Sweaters/Knits</a></li>
+                                <li><a class="dropdown-item" href="#">Jackets/Coats</a></li>
+                                <li><a class="dropdown-item" href="#">Blazers</a></li>
+                                <li><a class="dropdown-item" href="#">Denim</a></li>
+                                <li><a class="dropdown-item" href="#">Leggins/Pants</a></li>
+                                <li><a class="dropdown-item" href="#">Skits/Shorts</a></li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+
+                                <li><p class="px-3 pt-3 my-0 text-uppercase" style="font-weight: semibold;">Paint</p></li>
+                                <li><hr class="dropdown-divider mx-2"></li>  
+                                <li><a class="dropdown-item my-0" href="#">Tees/Tank tops</a></li>
+                                <li><a class="dropdown-item my-0" href="#">Shirts/Polos</a></li>
+                                <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                                <li><a class="dropdown-item" href="#">Sweatshirts/Hoodies</a></li>
+                                <li><a class="dropdown-item" href="#">Blazers</a></li>
+                                <li><a class="dropdown-item" href="#">Jackets/Vests</a></li>
+                            </ul>
+                          </div>
+                        <input id="noFocus" placeholder="Search for item..." aria-label="Search for item..." type="text" class="form-control border-0">
+                        <button id="noFocus" class="btn border-left" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                </div>
+                <div class="offset-md-3 col-2 d-flex">
+                    <a href="cart.html">
+                        <button type="button" id="noFocus" class="btn position-relative">
+                            <img src="../resources/images/cart.svg"/>
+                            <span class="position-absolute top-0 start-100 translate-start badge rounded-pill text-white" style="background-color: #60acc6;">
+                                2
+                            </span>
+                        </button>
+                    </a>
+                    <button class="btn dropdown-toggle ml-4 py-2 rounded-0" type="button" style="background-color: #60acc6; color: #ffffff" id="noFocus" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Account
+                    </button>
+                    <ul class="dropdown-menu p-3" style="font-family: 'Myriad Pro Regular';">
+                        <li>
+                            <div class="container" style="width: 230px; font-family: 'Myriad Pro Regular';">
+                                <div class="row justify-content-between">
+                                    <div class="column">
+                                        <img src="../resources/images/cart/BeardMan.png"/>
+                                    </div>
+                                    <div class="column align-self-center">
+                                        <div class="row text-uppercase my-1">Rebox zane</div>
+                                        <div class="row my-1">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star text-warning"></i></div>
+                                        <div class="row my-1" style="color: #60acc6;">1 x 250$</div>
+                                    </div>
+                                    <div class="column align-self-center">
+                                            <i class="fa-solid fa-circle-xmark" style="color: #c0c0c0;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider my-3"></li>  
+                        <li>
+                            <div class="container" style="width: 230px; font-family: 'Myriad Pro Regular';">
+                                <div class="row justify-content-between"  onclick="window.open('../pages/singlepage.html','_self')">
+                                    <div class="column">
+                                        <img src="../resources/images/cart/CartWoman.png"/>
+                                    </div>
+                                    <div class="column align-self-center">
+                                        <div class="row text-uppercase my-1">Rebox zane</div>
+                                        <div class="row my-1">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star text-warning"></i></div>
+                                        <div class="row my-1" style="color: #60acc6;">1 x 250$</div>
+                                    </div>
+                                    <div class="column align-self-center">
+                                            <i class="fa-solid fa-circle-xmark" style="color: #c0c0c0;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider my-3"></li>  
+                        <li>
+                            <div class="container my-3">
+                                <div class="row justify-content-between text-uppercase" style="font-family: 'Myriad Pro Regular'; font-weight: bold; font-size: 15pt;">
+                                    <div class="column">Total</div>
+                                    <div class="column">500$</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="font-family: 'Myriad Pro Regular';">
+                            <a href="checkout.html">
+                                <button class="btn text-uppercase py-2 px-2 my-3 rounded-0 container-fluid" id="noFocus" style="font-size: 15pt; font-weight: semibold; background-color: white; border-color: #60acc6; color: #60acc6;">
+                                    checkout
+                                </button>
+                            </a>
+                        </li>
+                        <li style="font-family: 'Myriad Pro Regular'; ">
+                            <button class="btn text-uppercase py-2 px-2 rounded-0 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: white; border-color: #eaeaea; color: #4a4a4a;">
+                                go to cart
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="px-5 py-2">
+                <ul class="nav justify-content-center nav-fill mx-5 text-uppercase" style="font-family: 'Myriad Pro Regular'; font-weight: semibold;">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="active" href="product.html">Paint</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Plates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Fluids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Accoseriese</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Hot deals</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid mb-5" style="background-color: #f8f3f4;">
+            <div class="container">
+                <div class="text-uppercase row justify-content-between py-5">
+                        <p style="color:#60acc6; font-size: 14pt; font-weight: 700; letter-spacing: 2px;">New arrivals</p>
+                        <p>Home/Paint/<b style="color:#60acc6;">New Arrivals</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <nav class="show bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                          <button style="font-weight: 600;" id="menuButton" class="text-uppercase container-fluid btn dropdown-toggle d-inline-flex align-items-center rounded-0 collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
+                            Category
+                          </button>
+                  
+                          <div class="collapse ml-3 mt-3" id="getting-started-collapse">
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Accessories</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Bags</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Denim</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Hoodies & Sweatshirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Jackets & Coats</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Pants</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Polos</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shoes</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shorts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Sweaters & Knits</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">T-Shirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Tanks</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="mb-1">
+                          <button style="font-weight: 600;" id="menuButton" class="text-uppercase container-fluid btn dropdown-toggle d-inline-flex align-items-center rounded-0 collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+                            Brand
+                          </button>
+                  
+                          <div class="collapse ml-3 mt-3" id="customize-collapse">
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Accessories</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Bags</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Denim</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Hoodies & Sweatshirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Jackets & Coats</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Pants</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Polos</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shoes</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shorts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Sweaters & Knits</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">T-Shirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Tanks</a></li>
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="mb-1">
+                          <button style="font-weight: 600;" id="menuButton" class="text-uppercase container-fluid btn dropdown-toggle d-inline-flex align-items-center rounded-0 collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+                            Designer
+                          </button>
+                  
+                          <div class="collapse ml-3 mt-3" id="layout-collapse">
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Accessories</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Bags</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Denim</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Hoodies & Sweatshirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Jackets & Coats</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Pants</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Polos</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shoes</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Shorts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Sweaters & Knits</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">T-Shirts</a></li>
+                                <li class="py-2"><a href="#" class="d-inline-flex align-items-center rounded">Tanks</a></li>
+
+                            </ul>
+                          </div>
+                        </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-4">
+                            <div style="font-weight: 600;" class="text-uppercase mb-3">
+                                Tranding now
+                            </div>
+                            <div class="col px-2" style="line-height: 80%;">
+                                <div class="row">
+                                    <p class="px-2" style="border-right-style: solid; border-right-width: 2px; border-right-color:#c3c3c3;">
+                                        Bohemian
+                                    </p>
+                                    <p class="px-2" style="border-right-style: solid; border-right-width: 2px; border-right-color:#c3c3c3;">
+                                        Floral
+                                    </p>
+                                    <p class="px-2">
+                                        Lace
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p class="px-2" style="border-right-style: solid; border-right-width: 2px; border-right-color:#c3c3c3;">
+                                        Floral
+                                    </p>
+                                    <p class="px-2" style="border-right-style: solid; border-right-width: 2px; border-right-color:#c3c3c3;">
+                                        Lace
+                                    </p>
+                                    <p class="px-2">
+                                        Bohemian
+                                    </p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div style="font-weight: 600;" class="text-uppercase mb-3">
+                                Size
+                            </div>
+                            <div class="col px-2">
+                                <div class="row px-2">
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            xxs
+                                        </label>
+                                    </div>
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            xs
+                                        </label>
+                                    </div>
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            s
+                                        </label>
+                                    </div>
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            m
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row px-2">
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                           l
+                                        </label>
+                                    </div>
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            xl
+                                        </label>
+                                    </div>
+                                    <div class="col form-check text-uppercase">
+                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault1">
+                                        <label class="form-check-label" for="flexCheckDefault1">
+                                            xxl
+                                        </label>
+                                    </div>
+                                    <div class="col"> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div style="font-weight: 600;" class="text-uppercase mb-3">
+                                price
+                            </div>
+                            <div class="col px-2">
+                               
+                                <div class="pl-2" slider id="slider-distance position-relative">
+                                    <div>
+                                        <div inverse-left style="width:60%;"></div>
+                                    <div inverse-right style="width:60%;"></div>
+                                    <div range style="left:13%;right:60%;"></div>
+                                    <span thumb style="left:13%;"></span>
+                                    <span thumb style="left:40%;"></span>
+                                    <div sign style="left:13%;">
+                                    <span id="value">13</span>
+                                    </div>
+                                    <div sign style="left:40%;">
+                                    <span id="value">40</span>
+                                    </div>
+                                </div>
+                                <input id="mehCmon1" type="range" tabindex="0" value="13" max="100" min="0" step=".25" oninput="
+                                this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                // var value = this.value;
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[1].style.width=value+'%';
+                                children[5].style.left=value+'%';
+                                children[7].style.left=value+'%';
+                                children[11].style.left=value+'%';
+                                children[11].childNodes[1].innerHTML=this.value * 4;" />
+                                
+                                <input id="mehCmon2" type="range" tabindex="0" value="40" max="100" min="0" step=".25" oninput="
+                                this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                // var value = this.value;
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[3].style.width=(100-value)+'%';
+                                children[5].style.right=(100-value)+'%';
+                                children[9].style.left=value+'%';
+                                children[13].style.left=value+'%';
+                                children[13].childNodes[1].innerHTML=this.value * 4;" />
+                                <div class="mt-3 row position-absolute justify-content-between">
+                                    <div>52$</div>
+                                    <div>400$</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-5 container-fluid p-3" style="background-color: #f3f3f3;">
+                        
+                            <div class="col-3 btn-group">
+                                <button type="button" id="noFocus" style="border: solid; border-width: 1px; border-color: #e1e1e1; background-color: white; color: #4a4a4a;" class="btn btn-danger">Sort By</button>
+                                <button type="button" id="noFocus" style="border: solid; border-width: 1px; border-color: #e1e1e1; background-color: white; color: #4a4a4a;" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                  <span class="visually-hidden">Name</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Name</a></li>
+                                  <li><a class="dropdown-item" href="#">Name</a></li>
+                                  <li><a class="dropdown-item" href="#">Name</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3 btn-group">
+                                <button type="button" id="noFocus" style="border: solid; border-width: 1px; border-color: #e1e1e1; background-color: white; color: #4a4a4a;" class="btn btn-danger">Show</button>
+                                <button type="button" id="noFocus" style="border: solid; border-width: 1px; border-color: #e1e1e1; background-color: white; color: #4a4a4a;" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                  <span class="visually-hidden">09</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">10</a></li>
+                                  <li><a class="dropdown-item" href="#">11</a></li>
+                                  <li><a class="dropdown-item" href="#">12</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-uppercase text-left" style="font-family: 'Myriad Pro Regular'; font-weight: bold; font-size: 10pt; letter-spacing: 1px;">
+                            <div class="row justify-content-center mb-3">
+                                <div id="featuredItem" class="position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/product/1.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                        <div class="row">
+                                            <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                            </button>
+                                        </div>
+                                            <div class="row mt-2">
+                                                <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/update.svg"/>
+                                                </button>
+                                                <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/favorite.svg"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div id="featuredItem" class="position-relative mx-3">
+                                    <figure class="m-0">
+                                    <img src="../resources/images/product/2.png"/>
+                                </figure>
+                                <div class="p-4">
+                                    <p>Car alexa technology</p>
+                                    <p style="color: #60acc6;">$52.00</p>
+                                </div>
+                                <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                    <div class="row">
+                                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                            <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                        </button>
+                                    </div>
+                                        <div class="row mt-2">
+                                            <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/product/update.svg"/>
+                                            </button>
+                                            <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/product/favorite.svg"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="featuredItem" class="position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/product/3.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                        <div class="row">
+                                            <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                            </button>
+                                        </div>
+                                            <div class="row mt-2">
+                                                <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/update.svg"/>
+                                                </button>
+                                                <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/favorite.svg"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row justify-content-center mb-3">
+                                <div id="featuredItem" class="position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/product/4.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                        <div class="row">
+                                            <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                            </button>
+                                        </div>
+                                            <div class="row mt-2">
+                                                <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/update.svg"/>
+                                                </button>
+                                                <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/favorite.svg"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div id="featuredItem" class="position-relative mx-3">
+                                    <figure class="m-0">
+                                    <img src="../resources/images/product/5.png"/>
+                                </figure>
+                                <div class="p-4">
+                                    <p>Car alexa technology</p>
+                                    <p style="color: #60acc6;">$52.00</p>
+                                </div>
+                                <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                    <div class="row">
+                                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                            <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                        </button>
+                                    </div>
+                                        <div class="row mt-2">
+                                            <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/product/update.svg"/>
+                                            </button>
+                                            <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/product/favorite.svg"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="featuredItem" class="position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/product/6.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                        <div class="row">
+                                            <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                            </button>
+                                        </div>
+                                            <div class="row mt-2">
+                                                <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/update.svg"/>
+                                                </button>
+                                                <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/favorite.svg"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row justify-content-center mb-3">
+                                <div id="featuredItem" class="position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/product/7.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                        <div class="row">
+                                            <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                            </button>
+                                        </div>
+                                            <div class="row mt-2">
+                                                <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/update.svg"/>
+                                                </button>
+                                                <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/favorite.svg"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div id="featuredItem" class="position-relative mx-3">
+                                    <figure class="m-0">
+                                    <img src="../resources/images/product/8.png"/>
+                                </figure>
+                                <div class="p-4">
+                                    <p>Car alexa technology</p>
+                                    <p style="color: #60acc6;">$52.00</p>
+                                </div>
+                                <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                    <div class="row">
+                                        <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                            <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                        </button>
+                                    </div>
+                                        <div class="row mt-2">
+                                            <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/product/update.svg"/>
+                                            </button>
+                                            <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/product/favorite.svg"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="featuredItem" class="position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/product/9.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <div class="col position-absolute" style="width: 60%; height: 12%; left:20%; top:20%;">
+                                        <div class="row">
+                                            <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                            </button>
+                                        </div>
+                                            <div class="row mt-2">
+                                                <button type="button" id="hoverButton" class="mr-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/update.svg"/>
+                                                </button>
+                                                <button type="button" id="hoverButton" class="ml-1 col btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: transparent; border-width: 2px; border-color: #fff; color: #fff;">
+                                                    <img src="../resources/images/product/favorite.svg"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination" style="border-style: solid; border-width: 1px; border-color: #e1e1e1;">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&lt;</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" id="activePage" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&gt;</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div>
+                                <button class="btn py-2 px-2 rounded-1 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: white; border-color: #60acc6; color: #60acc6;">
+                                    View All
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="p-5 mt-5" style="color: #fff; background: #222224; letter-spacing: 1px;">
+                    <div class="container my-5">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <div class="mb-4"><img src="../resources/images/freeDelivery.svg"/></div>
+                                <div class="col p-0 pl-4">
+                                    <h5>Free Delivery</h5>
+                                    <p style="font-size: 10pt;">Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models</p>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="mb-4"><img src="../resources/images/salesUndDiscounts.svg"/></div>
+                                <div class="col p-0 pl-4">
+                                    <h5>Sales & discounts</h5>
+                                    <p style="font-size: 10pt;">Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models</p>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="mb-4"><img src="../resources/images/qualityAssurance.svg"/></div>
+                                <div class="col p-0 pl-4">
+                                    <h5>Quality assurance</h5>
+                                    <p style="font-size: 10pt;">Worldwide delivery on all. Authorittively morph next-generation innovation with extensive models</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-5 mb-5">
+            <div class="position-relative">
+                <div class="row position-absolute" style="width: 35%; left: 15%; top: 20%;">
+                    <div>
+                        <img src="../resources/images/BinBurhan.png"/>
+                    </div>
+                    <div class="col text-left">
+                        <p style="font-style: italic;">"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"</p>
+                        <p style="color: #60acc6; line-height: 40%; font-weight: bold;">Bin Burhan</p>
+                        <p style="line-height: 40%;">Dhaka, Bd</p>
+                    </div>
+                </div>
+                <div class="position-absolute" style="width: 20%; right: 20%; top: 30%">
+                    <div class="text-uppercase mb-4" style="font-weight:500;">
+                        <p style="font-size: 20pt; line-height: 10%;">Subscribe</p>
+                        <p style="font-size: 12pt;">for our newletter and promotion</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="noFocus" style="height: 45px; background-color: #e1e1e1; border-bottom-left-radius: 25px; border-top-left-radius: 25px;" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" style="background-color: #60acc6; color: white; border: none; border-bottom-right-radius: 25px; border-top-right-radius: 25px;" type="button" id="button-addon2 noFocus">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="../resources/images/subscribe.png"/>
+            </div>
+        </div>
+        <div class="container text-center my-5">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="col text-left">
+                        <img src="../resources/images/logo.svg"/>
+                        <div class="ml-1 mt-4" style="opacity: .8;">
+                            <p style="font-size: 11pt;">Objectively transition rxtensive data rather than functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Instrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                            <p style="font-size: 11pt;">Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamicaly optimize.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-8 col-sm-4">
+                            <div class="col text-left" style="line-height: 120%;">
+                                <p class="text-uppercase mb-4 mt-3" style="font-size: 14pt; color:#60acc6; font-weight: 600;" >Company</p>
+                                <p style="opacity: .8;">Home</p>
+                                <p style="opacity: .8;">Shop</p>
+                                <p style="opacity: .8;">About</p>
+                                <p style="opacity: .8;">How It Works</p>
+                                <p style="opacity: .8;">Contact</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="col text-left" style="line-height: 120%;">
+                                <p class="text-uppercase mb-4 mt-3" style="font-size: 14pt; color:#60acc6; font-weight: 600;" >Information</p>
+                                <p style="opacity: .8;">Tearms & Condition</p>
+                                <p style="opacity: .8;">Privacy Policy</p>
+                                <p style="opacity: .8;">How to Buy</p>
+                                <p style="opacity: .8;">How to Sell</p>
+                                <p style="opacity: .8;">Promotion</p>
+                            </div>
+                        </div>
+                        <div class="col-0 col-sm-4">
+                            <div class="col text-left" style="line-height: 120%;">
+                                <p class="text-uppercase mb-4 mt-3" style="font-size: 14pt; color:#60acc6; font-weight: 600;" >Shop Category</p>
+                                <p style="opacity: .8;">Paint</p>
+                                <p style="opacity: .8;">Plates</p>
+                                <p style="opacity: .8;">Fluids</p>
+                                <p style="opacity: .8;">Apparel</p>
+                                <p style="opacity: .8;">Brows All</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid" style="background-color: #e6e6e6;">
+            <div class="container pt-4">
+                <div class="row justify-content-between">
+                    <p>©2017 Brand All Right Reserved.</p>
+                    <div class="row justify-content-around">
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-linkedin"></i></button>
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-pinterest-p"></i></button>
+                        <button class="btn rounded-0" id="footerButton"><i class="fa-brands fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../pages_scripts/productScripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

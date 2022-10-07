@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/fonts/MyriadPro/style.css">
+    <link rel="stylesheet" href="../resources/fonts/Awesome/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Lab 2</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-start mt-4 px-2 py-2">
+                <div class="col-2">
+                    <embed src="../resources/images/logo.svg"/>
+                </div>
+                <div class="col-5">
+                    <div class="input-group flex-nowrap border rounded mt-1">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle border-right rounded-0" style="background-image: linear-gradient(to top, #f0f0f0 0%, #f5f5f5 55%, #f2f2f2 100%);" id="noFocus" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Browse
+                            </button>
+                            <ul class="dropdown-menu" style="font-family: 'Myriad Pro Regular'; ">
+                                <li><p class="px-3 pt-3 my-0 text-uppercase" style="font-weight: semibold;">Plates</p></li>
+                                <li><hr class="dropdown-divider mx-2"></li>  
+                                <li><a class="dropdown-item my-0" href="#">Dresses</a></li>
+                                <li><a class="dropdown-item my-0" href="#">Tops</a></li>
+                                <li><a class="dropdown-item" href="#">Sweaters/Knits</a></li>
+                                <li><a class="dropdown-item" href="#">Jackets/Coats</a></li>
+                                <li><a class="dropdown-item" href="#">Blazers</a></li>
+                                <li><a class="dropdown-item" href="#">Denim</a></li>
+                                <li><a class="dropdown-item" href="#">Leggins/Pants</a></li>
+                                <li><a class="dropdown-item" href="#">Skits/Shorts</a></li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+
+                                <li><p class="px-3 pt-3 my-0 text-uppercase" style="font-weight: semibold;">Paint</p></li>
+                                <li><hr class="dropdown-divider mx-2"></li>  
+                                <li><a class="dropdown-item my-0" href="#">Tees/Tank tops</a></li>
+                                <li><a class="dropdown-item my-0" href="#">Shirts/Polos</a></li>
+                                <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                                <li><a class="dropdown-item" href="#">Sweatshirts/Hoodies</a></li>
+                                <li><a class="dropdown-item" href="#">Blazers</a></li>
+                                <li><a class="dropdown-item" href="#">Jackets/Vests</a></li>
+                            </ul>
+                          </div>
+                        <input id="noFocus" placeholder="Search for item..." aria-label="Search for item..." type="text" class="form-control border-0">
+                        <button id="noFocus" class="btn border-left" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                </div>
+                <div class="offset-md-3 col-2 d-flex">
+                    <a href="cart.html">
+                        <button type="button" id="noFocus" class="btn position-relative">
+                            <img src="../resources/images/cart.svg"/>
+                            <span class="position-absolute top-0 start-100 translate-start badge rounded-pill text-white" style="background-color: #60acc6;">
+                                2
+                            </span>
+                        </button>
+                    </a>
+                    <button class="btn dropdown-toggle ml-4 py-2 rounded-0" type="button" style="background-color: #60acc6; color: #ffffff" id="noFocus" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Account
+                    </button>
+                    <ul class="dropdown-menu p-3" style="font-family: 'Myriad Pro Regular';">
+                        <li>
+                            <div class="container" style="width: 230px; font-family: 'Myriad Pro Regular';">
+                                <div class="row justify-content-between">
+                                    <div class="column">
+                                        <img src="../resources/images/cart/BeardMan.png"/>
+                                    </div>
+                                    <div class="column align-self-center">
+                                        <div class="row text-uppercase my-1">Rebox zane</div>
+                                        <div class="row my-1">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star text-warning"></i></div>
+                                        <div class="row my-1" style="color: #60acc6;">1 x 250$</div>
+                                    </div>
+                                    <div class="column align-self-center">
+                                            <i class="fa-solid fa-circle-xmark" style="color: #c0c0c0;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider my-3"></li>  
+                        <li>
+                            <div class="container" style="width: 230px; font-family: 'Myriad Pro Regular';">
+                                <div class="row justify-content-between"  onclick="window.open('../pages/singlepage.html','_self')">
+                                    <div class="column">
+                                        <img src="../resources/images/cart/CartWoman.png"/>
+                                    </div>
+                                    <div class="column align-self-center">
+                                        <div class="row text-uppercase my-1">Rebox zane</div>
+                                        <div class="row my-1">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star text-warning"></i></div>
+                                        <div class="row my-1" style="color: #60acc6;">1 x 250$</div>
+                                    </div>
+                                    <div class="column align-self-center">
+                                            <i class="fa-solid fa-circle-xmark" style="color: #c0c0c0;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider my-3"></li>  
+                        <li>
+                            <div class="container my-3">
+                                <div class="row justify-content-between text-uppercase" style="font-family: 'Myriad Pro Regular'; font-weight: bold; font-size: 15pt;">
+                                    <div class="column">Total</div>
+                                    <div class="column">500$</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="font-family: 'Myriad Pro Regular';">
+                            <a href="checkout.html">
+                                <button class="btn text-uppercase py-2 px-2 my-3 rounded-0 container-fluid" id="noFocus" style="font-size: 15pt; font-weight: semibold; background-color: white; border-color: #60acc6; color: #60acc6;">
+                                    checkout
+                                </button>
+                            </a>
+                        </li>
+                        <li style="font-family: 'Myriad Pro Regular'; ">
+                            <button class="btn text-uppercase py-2 px-2 rounded-0 container-fluid" id="noFocus" style="font-size: 14pt; font-weight: semibold; background-color: white; border-color: #eaeaea; color: #4a4a4a;">
+                                go to cart
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="px-5 py-2">
+                <ul class="nav justify-content-center nav-fill mx-5 text-uppercase" style="font-family: 'Myriad Pro Regular'; font-weight: semibold;">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="product.html">Paint</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Plates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Fluids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Accoseriese</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Hot deals</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid" style="background-color: #f8f3f4;">
+            <div class="container">
+                <div class="text-uppercase row justify-content-between py-5">
+                        <p style="color:#60acc6; font-size: 14pt; font-weight: 700; letter-spacing: 2px;">New arrivals</p>
+                        <p>Home/Paint/<b style="color:#60acc6;">New Arrivals</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="carouselExampleControls" class="position-relative carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../resources/images/singlePage/title.png" width="100%">
+                  </div>
+                </div>
+                <button class="carousel-control-prev position-absolute" type="button" style="border: none;" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next position-absolute" type="button" style="border: none;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+            </div>
+            <div class="container px-0 my-5 pt-5 position-relative" style="height: 1000px">
+                <div class="px-0 col position-absolute text-center" style="background-color: white; top:-150px">
+                    <div class="mb-5 pt-5 text-uppercase">
+                        <div class="mb-4" style="color:#60acc6; font-weight: 600;">Plates collection</div>
+                        <div style="font-size: 15pt; font-weight: 700;">Moschino chip and chic</div>
+                    </div>
+                    <div class="px-5 mx-5 mb-4">Compellingly actualize fully researched process before proactive outsourcing. Progressive syndicate collaborative architecture before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
+                    <div class="container">
+                        <div class="row py-2 text-uppercase" style="opacity: .8; font-weight: 600;">
+                            <div class="col"><p>Material: <b>cotton</b></p></div>
+                            <div class="col"><p>Designer: <b>Binburhan</b></p></div>
+                        </div>
+                        <div class="row py-2 mb-5 text-center" style="font-size: 25pt; font-weight: 700; color: #60acc6;">
+                            <div class="col">
+                                $561
+                            </div>
+                        </div>
+                        <div class="mx-5 px-5">
+                            <div class="mx-5 px-5">
+                                <div class="px-3 row">
+                                    <div class="col">
+                                        <div class="text-uppercase" style="font-weight: 700; font-size: 14pt;">Choose color</div>
+                                        <select style="width: 90%;" class="p-2 form-select" id="inputGroupSelect01">
+                                            <option selected> Red</option>
+                                            <option value="1">Red</option>
+                                            <option value="2">Red</option>
+                                            <option value="3">Red</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-uppercase" style="font-weight: 700; font-size: 14pt;">Choose size</div>
+                                        <select style="width: 90%;" class="p-2 form-select" id="inputGroupSelect01">
+                                            <option selected> Red</option>
+                                            <option value="1">Red</option>
+                                            <option value="2">Red</option>
+                                            <option value="3">Red</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-uppercase" style="font-weight: 700; font-size: 14pt;">Quantity</div>
+                                        <select style="width: 90%;" class="p-2 form-select" id="inputGroupSelect01">
+                                            <option selected> Red</option>
+                                            <option value="1">Red</option>
+                                            <option value="2">Red</option>
+                                            <option value="3">Red</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="px-4 mt-4 container-fluid">
+                                    <button class="p-3 rounded-1" style="border-color:#60acc6; border-style: solid; background-color: transparent; border-width: 2px; width: 100%; color:#60acc6"><img src="../resources/images/cartPink.svg">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5 py-5 text-uppercase justify-content-center" style="font-weight: 800; font-size: 18pt;">You may also like</div>
+                        <div class="text-uppercase text-left" style="font-family: 'Myriad Pro Regular'; font-weight: bold; font-size: 10pt; letter-spacing: 1px;">
+                            <div class="row justify-content-center mb-3">
+                                <div id="featuredItem" class="mx-0 px-1 position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/singlePage/1.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
+                                        <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                    </button>
+                                </div>
+                                <div id="featuredItem" class="mx-0 px-1 position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/singlePage/2.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
+                                        <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                    </button>
+                                </div>
+                                <div id="featuredItem" class="mx-0 px-1 position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/singlePage/3.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
+                                        <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                    </button>
+                                </div>
+                                <div id="featuredItem" class="mx-0 px-1 position-relative">
+                                    <figure class="m-0">
+                                        <img src="../resources/images/singlePage/4.png"/>
+                                    </figure>
+                                    <div class="p-4">
+                                        <p>Car alexa technology</p>
+                                        <p style="color: #60acc6;">$52.00</p>
+                                    </div>
+                                    <button type="button" id="hoverButton" class="btn py-2 px-2 rounded-0 container-fluid position-absolute" id="noFocus" style="width: 60%; height: 12%; left:20%; top:30%;font-size: 14pt; font-weight: semibold; background-color: transparent; border-color: #fff; color: #fff;">
+                                        <img src="../resources/images/cartLight.svg"/> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-5 mb-5">
+            <div class="position-relative">
+                <div class="row position-absolute" style="width: 35%; left: 15%; top: 20%;">
+                    <div>
+                        <img src="../resources/images/BinBurhan.png"/>
+                    </div>
+                    <div class="col text-left">
+                        <p style="font-style: italic;">"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"</p>
+                        <p style="color: #60acc6; line-height: 40%; font-weight: bold;">Bin Burhan</p>
+                        <p style="line-height: 40%;">Dhaka, Bd</p>
+                    </div>
+                </div>
+                <div class="position-absolute" style="width: 20%; right: 20%; top: 30%">
+                    <div class="text-uppercase mb-4" style="font-weight:500;">
+                        <p style="font-size: 20pt; line-height: 10%;">Subscribe</p>
+                        <p style="font-size: 12pt;">for our newletter and promotion</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="noFocus" style="height: 45px; background-color: #e1e1e1; border-bottom-left-radius: 25px; border-top-left-radius: 25px;" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" style="background-color: #60acc6; color: white; border: none; border-bottom-right-radius: 25px; border-top-right-radius: 25px;" type="button" id="button-addon2 noFocus">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="../resources/images/subscribe.png"/>
+            </div>
+        </div>
+        <div class="container text-center my-5">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="col text-left">
+                        <img src="../resources/images/logo.svg"/>
+                        <div class="ml-1 mt-4" style="opacity: .8;">
+                            <p style="font-size: 11pt;">Objectively transition rxtensive data rather than functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Instrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                            <p style="font-size: 11pt;">Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamicaly optimize.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-8 col-sm-4">
+                            <div class="col text-left" style="line-height: 120%;">
+                                <p class="text-uppercase mb-4 mt-3" style="font-size: 14pt; color:#60acc6; font-weight: 600;" >Company</p>
+                                <p style="opacity: .8;">Home</p>
+                                <p style="opacity: .8;">Shop</p>
+                                <p style="opacity: .8;">About</p>
+                                <p style="opacity: .8;">How It Works</p>
+                                <p style="opacity: .8;">Contact</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="col text-left" style="line-height: 120%;">
+                                <p class="text-uppercase mb-4 mt-3" style="font-size: 14pt; color:#60acc6; font-weight: 600;" >Information</p>
+                                <p style="opacity: .8;">Tearms & Condition</p>
+                                <p style="opacity: .8;">Privacy Policy</p>
+                                <p style="opacity: .8;">How to Buy</p>
+                                <p style="opacity: .8;">How to Sell</p>
+                                <p style="opacity: .8;">Promotion</p>
+                            </div>
+                        </div>
+                        <div class="col-0 col-sm-4">
+                            <div class="col text-left" style="line-height: 120%;">
+                                <p class="text-uppercase mb-4 mt-3" style="font-size: 14pt; color:#60acc6; font-weight: 600;" >Shop Category</p>
+                                <p style="opacity: .8;">Paint</p>
+                                <p style="opacity: .8;">Plates</p>
+                                <p style="opacity: .8;">Fluids</p>
+                                <p style="opacity: .8;">Apparel</p>
+                                <p style="opacity: .8;">Brows All</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid" style="background-color: #e6e6e6;">
+            <div class="container pt-4">
+                <div class="row justify-content-between">
+                    <p>©2017 Brand All Right Reserved.</p>
+                    <div class="row justify-content-around">
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-linkedin"></i></button>
+                        <button class="btn rounded-0 mr-2" id="footerButton"><i class="fa-brands fa-pinterest-p"></i></button>
+                        <button class="btn rounded-0" id="footerButton"><i class="fa-brands fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
