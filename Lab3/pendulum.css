@@ -1,0 +1,166 @@
+.pendulum{
+    background-color: #ede9de;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+}
+
+.bulb{
+    margin-top: calc(50% - 50px);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.bulb-container{
+    width: 350px;
+    margin: auto;
+    position: relative;
+}
+
+.bulb-container:hover{
+    cursor: pointer;
+}
+
+.knobL{
+    transform-origin: 50% 0%;
+}
+.knobLAnimated{
+    animation: 
+    pendulumL 1s cubic-bezier(.29,.1,.79,.8) 0s,
+    pendulumL 1.5s cubic-bezier(.29,.1,.79,.8) 2s,
+    pendulumL 2s cubic-bezier(.29,.1,.79,.8) 5s,
+    pendulumL 2.5s cubic-bezier(.29,.1,.79,.8) 9s;
+} 
+
+
+.knobR{
+    transform-origin: 50% 0%;
+}
+.knobRAnimated{
+    animation: 
+    pendulumR 1s cubic-bezier(.29,.1,.79,.8) 1s,
+    pendulumR 1.5s cubic-bezier(.29,.1,.79,.8) 3.5s,
+    pendulumR 2s cubic-bezier(.29,.1,.79,.8) 7s,
+    pendulumR 2.5s cubic-bezier(.29,.1,.79,.8) 11.5s;
+}
+
+@keyframes pendulumL {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes pendulumR {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes shadowL {
+    0%, 100% {
+        filter: blur(10px);
+    }
+    50%{
+        filter: blur(30px);
+    }
+}
+
+@keyframes shadowR {
+    0%, 100%{
+        filter: blur(10px);
+    }
+    50%{
+        filter: blur(30px);
+    }
+}
+
+.bulb1{
+    left: 0px;
+    background-color: #815a6e;
+}
+.bulb2{
+    left: 50px;
+    background-image: linear-gradient(to right,#3b76a7,#ed3017);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.bulb3{
+    left: 100px;
+    background-image: linear-gradient(to right,#3b76a7,#ed3017);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.bulb4{
+    left: 150px;
+    background-image: linear-gradient(to right,#3b76a7,#ed3017);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.bulb5{
+    left: 200px;
+    background-image: linear-gradient(to right,#3b76a7,#ed3017);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.bulb6{
+    left: 250px;
+    background-image: linear-gradient(to right,#3b76a7,#ed3017);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.bulb7{
+    left: 300px;
+    background-color: #a74b4f;
+}
+
+.shadowC{
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: .1;
+    top: 200px;
+    filter: blur(10px);
+}
+.shadow1Animated{
+    animation:
+    shadowL 1s cubic-bezier(.29,.1,.79,.8) 0s,
+    shadowL 1.5s cubic-bezier(.29,.1,.79,.8) 2s,
+    shadowL 2s cubic-bezier(.29,.1,.79,.8) 5s,
+    shadowL 2.5s cubic-bezier(.29,.1,.79,.8) 9s;
+}
+.shadow1{
+    left: 125px;
+}
+.shadow2{
+    left: 175px;
+}
+.shadow3{
+    left: 225px;
+}
+.shadow4{
+    left: 275px;
+}
+.shadow5{
+    left: 325px;
+}
+.shadow6{
+    left: 375px;
+}
+.shadow7{
+    left: 425px;
+}
+.shadow7Animated{
+    animation:
+    shadowR 1s cubic-bezier(.29,.1,.79,.8) 1s,
+    shadowR 1.5s cubic-bezier(.29,.1,.79,.8) 3.5s,
+    shadowR 2s cubic-bezier(.29,.1,.79,.8) 7s,
+    shadowR 2.5s cubic-bezier(.29,.1,.79,.8) 11.5s;
+}

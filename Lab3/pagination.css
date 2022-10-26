@@ -1,0 +1,114 @@
+.center{
+    margin: auto;
+    width: 200px;
+    background-color: #33ac83;
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+a{
+    cursor: pointer;
+}
+
+a[state="disabled"]{
+    cursor: default;
+}
+
+.top-left-arrow {
+    width: 35px;
+    height: 6px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    transition: .4s;
+    border-radius: 3px;
+}
+
+.bottom-left-arrow {
+    width: 35px;
+    height: 6px;
+    background-color: #fff;
+    top: 21px;
+    transform: rotate(225deg);
+    transition: .4s;
+    border-radius: 3px;
+}
+
+a>.arrow:hover .top-left-arrow{
+    transform: translate( 0, 6px ) rotate( -20deg );
+}
+
+a>.arrow:hover .bottom-left-arrow{
+    transform: translate( 0, -4px ) rotate( 200deg );
+}
+
+.top-right-arrow {
+    width: 35px;
+    height: 6px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: .4s;
+    border-radius: 3px;
+    right: 0px;
+}
+
+.bottom-right-arrow {
+    width: 35px;
+    height: 6px;
+    background-color: #fff;
+    top: 21px;
+    transform: rotate(135deg);
+    transition: .4s;
+    border-radius: 3px;
+    right: 0px;
+}
+
+a>.arrow:hover .top-right-arrow{
+    transform: translate( 0, 6px ) rotate( 20deg );
+}
+
+a>.arrow:hover .bottom-right-arrow{
+    transform: translate( 0, -4px ) rotate( 160deg );
+}
+
+a[state="disabled"] .top-right-arrow{
+    transform: translate( 0, 10px ) rotate( 0deg );
+    opacity: .5;
+}
+
+a[state="disabled"] .bottom-right-arrow{
+    transform: translate( 0, -10px ) rotate( 180deg );
+    opacity: .5;
+}
+
+a[state="disabled"] .top-left-arrow{
+    transform: translate( 0, 10px ) rotate( 0deg );
+    opacity: .5;
+}
+
+a[state="disabled"] .bottom-left-arrow{
+    transform: translate( 0, -10px ) rotate( 180deg );
+    opacity: .5;
+}
+
+a[state="disabled"]>.arrow:hover .top-left-arrow{
+    transform: translate( 0, 10px ) rotate( 0deg );
+}
+
+a[state="disabled"]>.arrow:hover .bottom-left-arrow{
+    transform: translate( 0, -10px ) rotate( 180deg );
+}
+
+a[state="disabled"]>.arrow:hover .top-right-arrow{
+    transform: translate( 0, 10px ) rotate( 0deg );
+}
+
+a[state="disabled"]>.arrow:hover .bottom-right-arrow{
+    transform: translate( 0, -10px ) rotate( 180deg );
+}
+
+.quote-1{
+    color: #fff;
+}
