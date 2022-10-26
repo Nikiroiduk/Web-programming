@@ -5,6 +5,9 @@
     margin: auto;
 }
 
+/* cubic-bezier(0.55, 0.055, 0.675, 0.19) */
+/* сubic-bezier(0.215, 0.61, 0.355, 1) */
+
 .bulb{
     margin-top: calc(50% - 50px);
     width: 50px;
@@ -27,10 +30,10 @@
 }
 .knobLAnimated{
     animation: 
-    pendulumL 1s cubic-bezier(.29,.1,.79,.8) 0s,
-    pendulumL 1.5s cubic-bezier(.29,.1,.79,.8) 2s,
-    pendulumL 2s cubic-bezier(.29,.1,.79,.8) 5s,
-    pendulumL 2.5s cubic-bezier(.29,.1,.79,.8) 9s;
+    pendulumL 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s,
+    pendulumL 1.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2s,
+    pendulumL 2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 5s,
+    pendulumL 2.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 9s;
 } 
 
 
@@ -39,10 +42,10 @@
 }
 .knobRAnimated{
     animation: 
-    pendulumR 1s cubic-bezier(.29,.1,.79,.8) 1s,
-    pendulumR 1.5s cubic-bezier(.29,.1,.79,.8) 3.5s,
-    pendulumR 2s cubic-bezier(.29,.1,.79,.8) 7s,
-    pendulumR 2.5s cubic-bezier(.29,.1,.79,.8) 11.5s;
+    pendulumR 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s,
+    pendulumR 1.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 3.5s,
+    pendulumR 2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 7s,
+    pendulumR 2.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 11.5s;
 }
 
 @keyframes pendulumL {
@@ -131,10 +134,10 @@
 }
 .shadow1Animated{
     animation:
-    shadowL 1s cubic-bezier(.29,.1,.79,.8) 0s,
-    shadowL 1.5s cubic-bezier(.29,.1,.79,.8) 2s,
-    shadowL 2s cubic-bezier(.29,.1,.79,.8) 5s,
-    shadowL 2.5s cubic-bezier(.29,.1,.79,.8) 9s;
+    shadowL 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s,
+    shadowL 1.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2s,
+    shadowL 2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 5s,
+    shadowL 2.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 9s;
 }
 .shadow1{
     left: 125px;
@@ -159,8 +162,8 @@
 }
 .shadow7Animated{
     animation:
-    shadowR 1s cubic-bezier(.29,.1,.79,.8) 1s,
-    shadowR 1.5s cubic-bezier(.29,.1,.79,.8) 3.5s,
-    shadowR 2s cubic-bezier(.29,.1,.79,.8) 7s,
-    shadowR 2.5s cubic-bezier(.29,.1,.79,.8) 11.5s;
+    shadowR 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s,
+    shadowR 1.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 3.5s,
+    shadowR 2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 7s,
+    shadowR 2.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 11.5s;
 }
