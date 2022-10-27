@@ -1,0 +1,1283 @@
+.avengers {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 550px;
+    height: 450px;
+    margin: 0 auto;
+    background: white;
+    animation: shake 7s infinite;
+}
+
+.avengers-top{
+    position: absolute;
+    width: 550px;
+    height: 450px;
+    opacity: .0;
+    background-color: #fff;
+    left: 0px;
+    right: 0px;
+    z-index: 3000;
+    animation: thunder 10s infinite;
+}
+
+.hulk {
+    position: absolute;
+    margin-left: 230px;
+    bottom: 0;
+    margin-bottom: 301px;
+  }
+  .hulk .head {
+    width: 4.713em;
+    position: absolute;
+    margin-top: -2.75em;
+    margin-left: 3.563em;
+    border-bottom: 3.75em solid #bdbd00;
+    border-left: 0.938em solid transparent;
+    border-right: 0.938em solid transparent;
+    height: 0;
+    z-index: 10;
+  }
+  .hulk .head::after {
+    content: "";
+    width: 2.25em;
+    height: 0.375em;
+    position: absolute;
+    margin-top: 0.538em;
+    margin-left: -18px;
+    background: #034600;
+  }
+  .hulk .head::before {
+    content: "";
+    width: 3.25em;
+    height: 0.75em;
+    position: absolute;
+    margin-top: -0.75em;
+    margin-left: -25px;
+    background: #034600;
+    border-top-left-radius: 1.875em;
+    border-top-right-radius: 1.875em;
+  }
+  .hulk .mouth {
+    width: 31px;
+    height: 0;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 8px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #fff, #fff 25%, #4b0a00 25%, #4b0a00 70%, #fff 75%, #fff 100%);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    animation: mouth-open 7s infinite;
+  }
+  .hulk .mouth::before {
+    content: "";
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    background: #902e2b;
+    margin-top: 9px;
+    margin-left: 11px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  .hulk .right-arm {
+    width: 13.313em;
+    height: 13.75em;
+    margin-top: 1em;
+    margin-left: 2em;
+    border-radius: 50%;
+    background: #b5b500;
+    position: absolute;
+    clip: rect(-1em, 11.2em, 12.55em, 7.625em);
+    animation: hulk-right-arm 7s infinite;
+  }
+  .hulk .right-arm::after {
+    width: 12.063em;
+    height: 9.625em;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    transform: translateY(1.25em);
+    margin-left: -3.313em;
+  }
+  .hulk .left-arm {
+    width: 13.313em;
+    height: 13.75em;
+    margin-top: 1em;
+    margin-left: -4.3em;
+    border-radius: 50%;
+    background: #949400;
+    position: absolute;
+    clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+    animation: hulk-left-arm 7s infinite;
+  }
+  .hulk .left-arm::after {
+    content: "";
+    width: 12.063em;
+    height: 9.625em;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    transform: translateY(1.25em);
+    margin-left: 4.563em;
+  }
+  .hulk .fist {
+    width: 4.375em;
+    height: 4.375em;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 11.7em;
+    margin-left: -2.1em;
+    background: #949400;
+    box-shadow: 11.1em 0 0 #b5b500;
+    z-index: 10;
+    animation: hulk-hands 7s infinite;
+  }
+  .hulk .body {
+    width: 12.5em;
+    height: 12.5em;
+    background: #bdbd00;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset 1.125em 0 0 #a4a400, -0.938em 0 0 #8a8a00;
+    z-index: 10;
+  }
+  .hulk .body::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 3.125em;
+    margin-left: -77px;
+    background: #8a8a00;
+    box-shadow: 7.625em 0 0 #8a8a00;
+  }
+  .hulk .body::after {
+    content: "";
+    position: absolute;
+    width: 0.313em;
+    height: 0.313em;
+    border-radius: 50%;
+    margin-top: 10em;
+    margin-left: -10px;
+    background: #8a8a00;
+    box-shadow: 0 2.625em 0 #9ac7f1;
+  }
+  .hulk .right-leg {
+    width: 0.625em;
+    height: 6.438em;
+    position: absolute;
+    margin-left: 4.25em;
+    margin-top: 12.3em;
+    background-image: linear-gradient(to bottom, #2e0e62, #2e0e62 50%, #575700 50%, #575700 100%);
+  }
+  .hulk .right-leg::after {
+    content: "";
+    width: 28px;
+    height: 0.875em;
+    position: absolute;
+    margin-left: -1px;
+    background: #43158e;
+  }
+  .hulk .right-leg::before {
+    content: "";
+    width: 1.125em;
+    height: 0.188em;
+    position: absolute;
+    margin-top: 6.25em;
+    margin-left: -1.125em;
+    background: #575700;
+  }
+  .hulk .left-leg {
+    width: 0.625em;
+    height: 6.438em;
+    position: absolute;
+    margin-left: 6.688em;
+    margin-top: 12.3em;
+    background-image: linear-gradient(to bottom, #581bbb, #581bbb 50%, #bdbd00 50%, #bdbd00 100%);
+  }
+  .hulk .left-leg::after {
+    content: "";
+    width: 0.938em;
+    height: 0.875em;
+    position: absolute;
+    background: #581bbb;
+    margin-left: -0.938em;
+  }
+  .hulk .left-leg::before {
+    content: "";
+    width: 1.125em;
+    height: 0.188em;
+    position: absolute;
+    margin-top: 6.25em;
+    margin-left: 3px;
+    background: #bdbd00;
+  }
+
+  .captain {
+    position: absolute;
+    z-index: 1000;
+    margin-left: 385px;
+    bottom: 0;
+    margin-bottom: 147px;
+  }
+  .captain .head {
+    width: 21px;
+    height: 36px;
+    background: #43abf0;
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 44px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: bold;
+  }
+  .captain .head::before {
+    content: "";
+    width: 21px;
+    height: 17px;
+    background: #fdb0a4;
+    position: absolute;
+    margin-left: -7px;
+    margin-top: 19px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: inset 8px 0 0 0 #fc9a8b;
+  }
+  .captain .head::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    background: #fdb0a4;
+    border-radius: 50%;
+    margin-top: 16px;
+    margin-left: -5px;
+  }
+  .captain .body {
+    height: 53px;
+    width: 107px;
+    border-radius: 0 0 110px 110px;
+    background: #43abf0;
+    box-shadow: inset 8px 0 0 0 #29708f, inset 17px 0 0 0 #35a5ef;
+    z-index: 5;
+  }
+  .captain .body::before {
+    content: "";
+    width: 133px;
+    height: 30px;
+    margin-left: -64px;
+    position: absolute;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #29708f, #43abf0);
+    z-index: -1;
+  }
+  .captain .body::after {
+    content: "";
+    width: 31px;
+    height: 10px;
+    position: absolute;
+    margin-top: 48px;
+    margin-left: -15px;
+    background-image: linear-gradient(to right, #9d2f00, #9d2f00 30%, #ffffcb 30%, #ffffcb 70%, #b63700 70%, #b63700 100%);
+  }
+  .captain .body .star {
+    display: block;
+    color: #fff;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #fff;
+    border-left: 10px solid transparent;
+    margin-top: 18px;
+    margin-left: 43px;
+    position: absolute;
+    transform: rotate(38deg);
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .captain .body .star::before {
+    border-bottom: 8px solid #fff;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: relative;
+    height: 0;
+    width: 0;
+    top: -4px;
+    left: -6px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+  }
+  .captain .body .star::after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #fff;
+    border-left: 10px solid transparent;
+    transform: rotate(-70deg);
+    content: "";
+  }
+  .captain .right-arm {
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    background: #ffffcb;
+    margin-top: -30px;
+    margin-left: 10px;
+    transform-origin: top center;
+    z-index: -1;
+  }
+  .captain .right-arm::before {
+    content: "";
+    width: 28px;
+    height: 50px;
+    position: absolute;
+    background: #ffffcb;
+    border-radius: 30% 50%;
+    margin-left: -18px;
+    margin-top: -3px;
+  }
+  .captain .left-arm {
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    left: 75px;
+    background: #ffffcb;
+    margin-top: -30px;
+    margin-left: 10px;
+    transform-origin: top center;
+    animation: shieldThrowHand 10s infinite;
+    z-index: 1;
+  }
+  .captain .left-arm::before {
+    content: "";
+    width: 28px;
+    height: 50px;
+    position: absolute;
+    left: 18px;
+    background: #ffffcb;
+    border-radius: 50% 30%;
+    margin-left: -18px;
+    margin-top: -3px;
+  }
+  .captain .shield {
+    width: 40px;
+    height: 40px;
+    background: #43abf0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    margin-left: 75px;
+    margin-top: 30px;
+    box-shadow: 0 0 0 8px #ffffcb, 0 0 0 18px #c53905;
+    transform-origin: center center;
+    animation: shieldThrow 10s infinite;
+  }
+  .captain .shield .star {
+    display: block;
+    color: #fff;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #fff;
+    border-left: 10px solid transparent;
+    margin-top: 15px;
+    margin-left: 10px;
+    position: absolute;
+    transform: rotate(35deg);
+  }
+  .captain .shield .star::before {
+    border-bottom: 8px solid #fff;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: relative;
+    height: 0;
+    width: 0;
+    top: -4px;
+    left: -6px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+  }
+  .captain .shield .star::after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #fff;
+    border-left: 10px solid transparent;
+    transform: rotate(-70deg);
+    content: "";
+  }
+  .captain .right-hand {
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    top: 31px;
+    left: -10px;
+    margin-top: 29px;
+    margin-left: 8px;
+    background: #a73200;
+    transform: skew(0deg);
+  }
+  .captain .right-hand::before {
+    width: 10px;
+    height: 30px;
+    background: #b3b300;
+    position: absolute;
+    margin-left: 12px;
+    transform: skew(-71deg);
+  }
+  .captain .right-hand::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 26px;
+    margin-left: -6px;
+    background: #a73200;
+  }
+  .captain .left-hand {
+    left: -8px;
+    top: 31px;
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 8px;
+    background: #a73200;
+    transform-origin: top center;
+  }
+  .captain .left-hand::before {
+    content: "";
+    width: 10px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    margin-left: 12px;
+    transform: skew(-10deg);
+  }
+  .captain .left-hand::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 26px;
+    margin-left: -6px;
+    background: #a73200;
+  }
+  .captain .legs {
+    width: 8px;
+    height: 100px;
+    background: #29708f;
+    position: absolute;
+    margin-left: 38px;
+    margin-top: 5px;
+    box-shadow: 22px 0 0 0 #43abf0;
+  }
+  .captain .legs::before {
+    content: "";
+    width: 31px;
+    height: 5px;
+    background: #501800;
+    position: absolute;
+    left: 0px;
+  }
+  .captain .legs::after {
+    content: "";
+    width: 20px;
+    height: 9px;
+    background-image: linear-gradient(to right, #29708f, #43abf0);
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 5px;
+  }
+  .captain .boots {
+    width: 10px;
+    height: 41px;
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 37px;
+    background: #832800;
+    box-shadow: 22px 0 0 0 #b63700;
+  }
+  .captain .boots::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background: #832800;
+    margin-top: 39px;
+    margin-left: -21px;
+    box-shadow: 40px 0 0 0 #b63700;
+  }
+  .captain .boots::before {
+    content: "";
+    width: 18px;
+    height: 12px;
+    background: #832800;
+    position: absolute;
+    margin-left: -9px;
+    box-shadow: 22px 0 0 0 #b63700;
+  }
+  
+
+  .ironman {
+    position: absolute;
+    z-index: 900;
+    margin-left: 30px;
+    margin-bottom: 138px;
+    animation: ironManFly 10s infinite;
+    bottom: 0;
+  }
+  .ironman .helmet {
+    width: 22px;
+    height: 34px;
+    background: #ab3300;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 44px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+  }
+  .ironman .helmet::before {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -11px;
+    z-index: 3;
+    box-shadow: 15px 0 0 0 white;
+  }
+  .ironman .mask {
+    width: 8px;
+    height: 14px;
+    background: #deb800;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 2px;
+  }
+  .ironman .mask::before {
+    content: "";
+    width: 13px;
+    height: 18px;
+    background: #deb800;
+    position: absolute;
+    transform: rotate(60deg);
+    margin-top: -3px;
+    margin-left: 4px;
+  }
+  .ironman .mask::after {
+    content: "";
+    width: 13px;
+    height: 18px;
+    background: #deb800;
+    position: absolute;
+    transform: rotate(-60deg);
+    margin-top: -3px;
+    margin-left: -7px;
+  }
+  .ironman .body {
+    height: 53px;
+    width: 107px;
+    border-radius: 0 0 110px 110px;
+    background: #ab3300;
+    box-shadow: inset 10px 0 0 0 #922b00, inset 20px 0 0 0 #9c2e00;
+    padding-top: 11px;
+    z-index: 50;
+  }
+  .ironman .body::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: #922b00;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -67px;
+    margin-top: -18px;
+    box-shadow: 105px 0 0 0 #ab3300;
+    z-index: 50;
+  }
+  .ironman .body::after {
+    content: "";
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -18px;
+    background-image: linear-gradient(to right, #922b00, #922b00 15%, #9c2e00 15%, #9c2e00 29%, #ab3300 20%, #ab3300 20%);
+  }
+  .ironman .power {
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 0 5px #deb800;
+  }
+  .ironman .left-leg {
+    width: 10px;
+    height: 90px;
+    background: #c98700;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 12px;
+    border-top-right-radius: 10px;
+  }
+  .ironman .left-leg::before {
+    content: "";
+    width: 25px;
+    height: 65px;
+    background: #922b00;
+    position: absolute;
+    border-top-right-radius: 20px;
+    margin-top: 60px;
+    margin-left: -14px;
+  }
+  .ironman .right-leg {
+    width: 10px;
+    height: 90px;
+    background: #deb800;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 12px;
+    border-top-left-radius: 10px;
+  }
+  .ironman .right-leg::before {
+    content: "";
+    width: 25px;
+    height: 65px;
+    background: #ab3300;
+    position: absolute;
+    border-top-left-radius: 20px;
+    margin-top: 60px;
+    margin-left: -9px;
+  }
+  .ironman .left-arm {
+    width: 10px;
+    height: 45px;
+    background: #c98700;
+    position: absolute;
+    margin-left: -6px;
+    margin-top: 18px;
+    border-bottom-left-radius: 20px;
+    transform-origin: top center;
+    animation: ironManLeftHand 10s infinite;
+  }
+  .ironman .left-arm::before {
+    content: "";
+    height: 60px;
+    width: 31px;
+    border-radius: 60px 0 0 60px;
+    background: #922b00;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -26px;
+    z-index: -1;
+  }
+  .ironman .left-arm::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #922b00;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 1px;
+  }
+  .ironman .right-arm {
+    width: 10px;
+    height: 45px;
+    background: #c98700;
+    position: absolute;
+    margin-left: 105px;
+    margin-top: 18px;
+    border-bottom-right-radius: 20px;
+    transform-origin: top center;
+    animation: ironManRightHand 10s infinite;
+  }
+  .ironman .right-arm::before {
+    content: "";
+    height: 60px;
+    width: 31px;
+    border-radius: 0 60px 60px 0;
+    background: #ab3300;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -5px;
+    z-index: -1;
+  }
+  .ironman .right-arm::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ab3300;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -11px;
+  }
+  .container{
+    margin:80px auto;
+    width: 54px;
+    height: 38px;
+    position:relative;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .flame{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+  
+  .yellow{
+    left: -10px;
+    top: 48px;
+    width: 32px;
+    height: 30px;
+    background:gold;
+    transform: rotate(-180deg) scaleX(.5);
+    animation: yellowFire 10s infinite;
+  }
+  
+  .orange{
+    left: -14px;
+    top: 46px;
+    width: 40px;
+    height: 40px;
+    background:orange;
+    transform: rotate(-180deg) scaleX(.5);
+    animation: orangeFire 10s infinite;
+  }
+  
+  .red{
+    left: -19px;
+    top: 45px;
+    width: 50px;
+    height: 50px;
+    background:OrangeRed;
+    transform: rotate(-180deg) scaleX(.5);
+    animation: redFire 10s infinite;
+  }
+  
+  .white{
+    left: -9px;
+    bottom: -35px;
+    width: 30px;
+    height: 23px;
+    background:white;
+    transform: rotate(-180deg) scaleX(.5);
+    animation: whiteFire 10s infinite;
+  }
+  
+  .circle{
+    border-radius: 50%;
+    position:absolute;  
+  }
+
+  .thor {
+    position: absolute;
+    margin-left: 148px;
+    z-index: 1000;
+    margin-bottom: 223px;
+    bottom: 0;
+  }
+  .thor .helmet {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 40px solid #d7a900;
+    margin-top: -40px;
+    margin-left: 42px;
+    box-shadow: 0 -18px 0 -16px #66999a;
+  }
+  .thor .helmet::before {
+    content: "";
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    background: #66999a;
+    margin-left: -21px;
+    margin-top: -12px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 15px;
+    box-shadow: inset -3px 0px 0 transparent;
+  }
+  .thor .helmet::after {
+    content: "";
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    background: #89b9ef;
+    margin-left: 10px;
+    margin-top: -12px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+    box-shadow: inset -3px 0px 0 transparent;
+  }
+  .thor .head {
+    width: 21px;
+    height: 40px;
+    background-image: linear-gradient(#72a9d5, #72a9d5 32%, #ffdeef 10%);
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 50px;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+  }
+  .thor .head::after {
+    content: "";
+    width: 10px;
+    height: 17px;
+    background: #d7a900;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+  .thor .head .beard {
+    width: 21px;
+    height: 5px;
+    background: #d7a900;
+    position: absolute;
+    margin-top: 12px;
+  }
+  .thor .head .beard::before {
+    content: "";
+    width: 11px;
+    height: 5px;
+    background: #d7a900;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 17px;
+    transform: rotate(-40deg);
+  }
+  .thor .head .beard::after {
+    content: "";
+    width: 11px;
+    height: 5px;
+    background: #d7a900;
+    position: absolute;
+    margin-left: -13px;
+    margin-top: 17px;
+    transform: rotate(40deg);
+  }
+  .thor .body {
+    border-top: 65px solid #004278;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 120px;
+    position: absolute;
+  }
+  .thor .body::before {
+    content: "";
+    width: 40px;
+    height: 5px;
+    left: 1px;
+    position: absolute;
+    background-image: linear-gradient(to right, #c98700, #d7a900);
+  }
+  .thor .body::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background: #94bdef;
+    margin-top: -60px;
+    margin-left: -37px;
+    box-shadow: 45px 0 0 0 #94bdef, 10px 29px 0 -5px #94bdef, 35px 29px 0 -5px #94bdef;
+  }
+  .thor .arm-right {
+    width: 40px;
+    height: 40px;
+    background: #ffcee7;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 100px;
+    box-shadow: -5px 0 0 #ffcee7, -10px 0 0 #ffcee7, -15px 0 0 #ffcee7, -20px 0 0 #ffcee7, -20px 90px 0 -15px #ffcee7, -20px 95px 0 -15px #ffcee7, -20px 100px 0 -15px #ffcee7;
+  }
+  .thor .arm-right::before {
+    content: "";
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    background: #ffcee7;
+    margin-left: -25px;
+    margin-top: 10px;
+    border-bottom-right-radius: 30px;
+  }
+  .thor .arm-right::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    background: #290000;
+    position: absolute;
+    margin-top: 113px;
+    margin-left: -25px;
+  }
+  .thor .arm-left {
+    width: 40px;
+    height: 40px;
+    background: #ffc688;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 0;
+    transform-origin: center center;
+    animation: hummerThunder 10s infinite;
+    box-shadow: -5px 0 0 #ffc688, -10px 0 0 #ffc688, -15px 0 0 #ffc688, -20px 0 0 #ffc688, 0 90px 0 -15px #ffc688, 0 95px 0 -15px #ffc688, 0 100px 0 -15px #ffc688;
+  }
+  .thor .arm-left::before {
+    content: "";
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    background: #ffc688;
+    margin-left: -35px;
+    margin-top: 10px;
+    border-bottom-left-radius: 30px;
+  }
+  .thor .arm-left::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    background: #290000;
+    position: absolute;
+    margin-top: 113px;
+    margin-left: -5px;
+  }
+  .thor .legs {
+    width: 13px;
+    height: 66px;
+    background: #002e54;
+    position: absolute;
+    margin-top: 70px;
+    left: 40px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 27px 0 0 0 #004278;
+  }
+  .thor .legs::before {
+    content: "";
+    width: 10px;
+    height: 75px;
+    position: absolute;
+    background: #002e54;
+    margin-left: -1px;
+    box-shadow: 0 75px 0 0 #b75600, 21px 0 0 0 #004278, 21px 75px 0 0 #ce9700;
+  }
+  .thor .legs::after {
+    content: "";
+    width: 11px;
+    height: 10px;
+    background-image: linear-gradient(#002e54, #004278);
+    position: absolute;
+    margin-left: 9px;
+  }
+  .thor .cap {
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    background: #a72300;
+    z-index: 0;
+    box-shadow: inset 10px 0 0 #721200, inset 20px 0 0 #7b1e00;
+  }
+  .thor .hammer {
+    width: 42px;
+    height: 27px;
+    position: absolute;
+    background: #382727;
+    background: linear-gradient(135deg, transparent 5px, #382727 0) top left, linear-gradient(225deg, transparent 5px, #382727 0) top right, linear-gradient(315deg, transparent 5px, #382727 0) bottom right, linear-gradient(45deg, transparent 5px, #382727 0) bottom left;
+    background-size: 52% 52%;
+    background-repeat: no-repeat;
+    margin-top: 148px;
+    margin-left: 1px;
+  }
+  .thor .hammer::before {
+    content: "";
+    width: 6px;
+    height: 25px;
+    background: #291d1d;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -4px;
+  }
+  .thor .hammer::after {
+    content: "";
+    width: 6px;
+    height: 3px;
+    position: absolute;
+    background: #291d1d;
+    margin-top: 25px;
+    margin-left: -4px;
+  }
+  .thor .feet {
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    background: #b75600;
+    margin-top: 220px;
+    margin-left: 30px;
+    box-shadow: 36px 0 0 #ce9700;
+  }
+  .thor .feet::after {
+    content: "";
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    border-radius: 90px 90px 0 0;
+    background: #ce9700;
+    margin-top: -84px;
+    margin-left: -3px;
+    box-shadow: 24px 0 0 #b75600;
+  }
+
+@keyframes ironManLeftHand {
+    0%, 40%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes ironManRightHand {
+    0%, 40%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes ironManFly {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes shieldThrowHand {
+    0%, 60%, 80%, 100%{
+        transform: rotate(0deg);
+    }
+    64%, 73%{
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes shieldThrow {
+    0%, 60%, 80%, 100%{
+        transform: rotate(0deg);
+        translate: 0 0;
+    }
+    70%{
+        translate: -250px -250px;
+        transform: rotate(1440deg);
+    }
+}
+
+@keyframes hummerThunder {
+    0%, 70%, 100%{
+        transform: rotate(0deg);
+    }
+    80%, 90%{
+        transform: rotate(160deg);
+    }
+}
+
+  @keyframes thunder {
+    0%, 100%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    81%, 83%, 85%, 87%{
+        opacity: .9;
+    }
+    82%, 84%, 86%{
+        opacity: .1;
+    }
+  }
+
+  @keyframes shake {
+    from {
+      top: 0px;
+      left: 0;
+    }
+    77% {
+      top: 0px;
+      left: 0;
+    }
+    78%, 80%, 82%, 84%, 86%, 88%, 90%, 92% {
+      top: 3px;
+      left: 3px;
+    }
+    79%, 81%, 83%, 85%, 87%, 89%, 91% {
+      top: 0px;
+      left: -3px;
+    }
+  }
+  @keyframes mouth-open {
+    77% {
+      height: 0;
+    }
+    80% {
+      height: 22px;
+    }
+    93% {
+      height: 22px;
+      opacity: 1;
+    }
+    95% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  @keyframes hulk-hands {
+    6% {
+      box-shadow: 11.1em 0 0 #b5b500;
+    }
+    77% {
+      box-shadow: 11.1em 0 0 #b5b500;
+      margin-left: -2.1em;
+      transform: translate(0, 0);
+    }
+    80% {
+      margin-left: 0.5em;
+      box-shadow: 8.5em 0 0 #b5b500;
+      transform: translate(-0.9em, -19.9em);
+    }
+    93% {
+      margin-left: 0.5em;
+      box-shadow: 8.5em 0 0 #b5b500;
+      transform: translate(-0.9em, -19.9em);
+    }
+    94% {
+      box-shadow: 11.1em 0 0 #b5b500;
+      margin-left: -2.1em;
+      transform: translate 0em, 0em;
+    }
+  }
+  @keyframes hulk-right-arm {
+    77% {
+      margin-top: 1em;
+      margin-left: 2em;
+      clip: rect(-1em, 11.2em, 12.55em, 7.625em);
+    }
+    80% {
+      margin-top: -8.125em;
+      margin-left: 2.5em;
+      clip: rect(0.563em, 13.363em, 13.75em, 6.625em);
+    }
+    93% {
+      margin-top: -8.125em;
+      margin-left: 2.5em;
+      clip: rect(0.563em, 13.363em, 13.75em, 6.625em);
+    }
+    95% {
+      margin-top: 1em;
+      margin-left: 2em;
+      clip: rect(-1em, 11.2em, 12.55em, 7.625em);
+    }
+  }
+  @keyframes hulk-left-arm {
+    77% {
+      margin-top: 1em;
+      margin-left: -4.3em;
+      clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+    }
+    80% {
+      margin-top: -8.125em;
+      margin-left: -4.375em;
+      clip: rect(-0.188em, 6.563em, 13.875em, 0em);
+    }
+    93% {
+      margin-top: -8.125em;
+      margin-left: -4.375em;
+      clip: rect(-0.188em, 6.563em, 13.875em, 0em);
+    }
+    95% {
+      margin-top: 1em;
+      margin-left: -4.3em;
+      clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+    }
+  }
+
+  @keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+  }
+
+  @keyframes whiteFire {
+    0%, 100%{
+        transform: scaleY(0) scaleX(.5);
+    }
+    50%{
+        transform: scaleY(1) scaleX(.5);
+    }
+  }
+
+  @keyframes yellowFire {
+    0%, 100%{
+        transform: scaleY(0) scaleX(.5);
+    }
+    50%{
+        transform: scaleY(1) scaleX(.5);
+    }
+  }
+
+  @keyframes orangeFire {
+    0%, 100%{
+        transform: scaleY(0) scaleX(.5);
+    }
+    50%{
+        transform: scaleY(1) scaleX(.5);
+    }
+  }
+  @keyframes redFire {
+    0%, 100%{
+        transform: scaleY(0) scaleX(.5);
+    }
+    50%{
+        transform: scaleY(1) scaleX(.5);
+    }
+  }
